@@ -1,0 +1,15 @@
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":null,"message":"Hi, Kindly download ALAT and sign in to see Wema Bank account details.","status":true,"code":0,"statusCode":200,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":{"accountGenerationStatus":null,"trackingId":"c40bcfb0-a6f9-405c-a87d-20228a8c8b43","addressVerificationStatus":null},"message":"An Otp has been sent to 07030****","status":true,"code":0,"statusCode":200,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":null,"message":"Hi, an error occurred while processing your request","status":false,"code":0,"statusCode":0,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":null,"message":"Hi, an error occurred while processing your request","status":false,"code":0,"statusCode":0,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":null,"message":"Hi, an error occurred while processing your request","status":false,"code":0,"statusCode":0,"errors":null}

@@ -1,0 +1,4 @@
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/ValidateBVNandEnqueueAccountCreation
+POST data being sent:
+Response: {"message":"Invalid Otp","status":false,"code":0,"statusCode":0,"errors":null}

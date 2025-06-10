@@ -1,6 +1,6 @@
 <?php
 
-class GeneratePartnerAccountService
+class ValidateBvnWithOtpService
 {
     private $httpClient;
 
@@ -23,7 +23,7 @@ class GeneratePartnerAccountService
         }
 
         // Validate input data
-        $validationResult = $this->validateAccountData($inputData);
+        $validationResult = $this->validateBvnData($inputData);
 
         // If validation fails, return errors
         if (!$validationResult['valid']) {
@@ -38,7 +38,7 @@ class GeneratePartnerAccountService
 
         try {
             // Make POST request to the account generation endpoint
-            $response = $this->httpClient->post('/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn', $sanitizedData);
+            $response = $this->httpClient->post('/account-creation/api/CustomerAccount/ValidateBVNandEnqueueAccountCreation', $sanitizedData);
 
             return [
                 'status' => 'success',
@@ -76,23 +76,25 @@ class GeneratePartnerAccountService
      * @param array $data Input data to validate
      * @return array Validation result
      */
-    private function validateAccountData(array $data): array
+    private function validateBvnData(array $data): array
 {
     $errors = [];
 
-    // Validate email
-    if (!isset($data['email']) || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = 'A valid email address is required.';
-    }
+   
 
-    // Validate phone number (11-digit numeric string)
+    // Validate phone number 
     if (!isset($data['phoneNumber']) || !is_string($data['phoneNumber'])) {
-        $errors['phoneNumber'] = 'phone number is required. to receive OTP';
+        $errors['phoneNumber'] = 'phone number is required. you received OTP';
     }
 
-    // Validate NIN (11-digit numeric string)
-    if (!isset($data['bvn']) || !is_string($data['bvn'])) {
-        $errors['bvn'] = 'bvn is required for validation';
+    // Validate OTP
+   if (!isset($data['otp']) || !is_string($data['otp'])) {
+    $errors['otp'] = 'OTP is required';
+}
+
+       // Validate OTP
+    if (!isset($data['trackingId']) || !is_string($data['trackingId'])) {
+        $errors['trackingId'] = 'trackingId is required';
     }
 
     return [
@@ -110,9 +112,9 @@ class GeneratePartnerAccountService
     private function sanitizeAccountData(array $data): array
 {
     return [
-        'email' => trim($data['email']),
+        'otp' => trim($data['otp']),
+        'trackingId' => trim($data['trackingId']),
         'phoneNumber' => trim($data['phoneNumber']), 
-        'bvn' => trim($data['bvn']),
     ];
 }
 

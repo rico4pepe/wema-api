@@ -1,0 +1,46 @@
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+Invalid JSON response: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":null,"message":"Hi, the Bvn provided is not correct","status":false,"code":0,"statusCode":0,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":null,"message":"Hi, the Bvn provided is not correct","status":false,"code":0,"statusCode":0,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":{"accountGenerationStatus":null,"trackingId":"f6ef77b4-6ca4-4d12-a33e-b5e13ad95fb1","addressVerificationStatus":null},"message":"An Otp has been sent to 07065****","status":true,"code":0,"statusCode":200,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: <html>
+<head><title>503 Service Temporarily Unavailable</title></head>
+<body>
+<center><h1>503 Service Temporarily Unavailable</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":{"accountGenerationStatus":null,"trackingId":"28641bbf-e032-43b6-af2b-a465995264cc","addressVerificationStatus":null},"message":"An Otp has been sent to 08143****","status":true,"code":0,"statusCode":0,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":null,"message":"Hi, the Bvn provided is not correct","status":false,"code":0,"statusCode":0,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+Response: {"data":null,"message":"Hi, the Bvn provided is not correct","status":false,"code":0,"statusCode":0,"errors":null}

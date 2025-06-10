@@ -6,11 +6,12 @@
 require_once __DIR__ . DIRECTORY_SEPARATOR . '/classes/config.php';
 require_once __DIR__ . DIRECTORY_SEPARATOR .  'classes/HttpClient.php';
 require_once __DIR__ . DIRECTORY_SEPARATOR .  'classes/Logger.php';
-require_once __DIR__ . DIRECTORY_SEPARATOR .  'classes/GeneratePartnerAccountService.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR .  'classes/ValidateBvnWithOtpService.php';
 
 
 
 
+// Load configuration
 // Load configuratio
 $config = [
     'base_url' => BASE_URL,
@@ -21,11 +22,11 @@ $config = [
 
 
 try {
-    $logger = new Logger(); // Initialize the logger
+      $logger = new Logger(); // Initialize the logger
     $httpClient = new HttpClient($config, $logger);
 
-    // Initialize the GeneratePartnerAccountService with the HttpClient
-    $accountservice = new GeneratePartnerAccountService($httpClient);
+     // Initialize the ValidateBvnWithOtpService with the HttpClient
+    $accountservice = new ValidateBvnWithOtpService($httpClient);
 
     // Get service status as JSON response
     $status = $accountservice->generateAccount();
