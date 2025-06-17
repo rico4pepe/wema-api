@@ -1,0 +1,27 @@
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+POST data being sent:
+Response: {"data":{"accountGenerationStatus":"Pending","trackingId":"00000000-0000-0000-0000-000000000000","addressVerificationStatus":null},"message":"Hi, customer record already exists","status":false,"code":0,"statusCode":0,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+POST data being sent:
+Response: <html>
+<head><title>503 Service Temporarily Unavailable</title></head>
+<body>
+<center><h1>503 Service Temporarily Unavailable</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+POST data being sent:
+Response: {"data":{"accountGenerationStatus":"Pending","trackingId":"00000000-0000-0000-0000-000000000000","addressVerificationStatus":null},"message":"Hi, customer record already exists","status":false,"code":0,"statusCode":0,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/PostPartnershipAccountCreationWithBvn
+POST data being sent:
+Response: {"data":{"accountGenerationStatus":"Pending","trackingId":"00000000-0000-0000-0000-000000000000","addressVerificationStatus":null},"message":"Hi, customer record already exists","status":false,"code":0,"statusCode":0,"errors":null}
+HttpClient initialized with base URL: https://apiplayground.alat.ng
+Making POST request to: https://apiplayground.alat.ng/account-creation/api/CustomerAccount/ValidateBVNandEnqueueAccountCreation
+POST data being sent:
+Response: {"data":{"accountGenerationStatus":"Pending","trackingId":"00000000-0000-0000-0000-000000000000","addressVerificationStatus":null},"message":"Hello! PETER, your wallet will be created shortly. If your account is not generated, please try again in ten minutes.","status":true,"code":0,"statusCode":200,"errors":null}
